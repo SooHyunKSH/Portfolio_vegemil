@@ -1,0 +1,191 @@
+/* layout 공통 */
+#wrap {
+  width: $siteWidth;
+  margin: 0 auto;
+  #header {
+    position: relative;
+    height: 80px;
+    background: #fff;
+    top: 20px;
+    padding: 0 20px;
+    #top_logo {
+      float: left;
+      a {
+        height: 80px;
+        line-height: 80px;
+      }
+    }
+    // top_menu 구현
+    #top_nav {
+      position: absolute;
+      height: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      ul {
+        float: left;
+        li {
+          position: relative;
+          float: left;
+          margin-left: 30px;
+          &:nth-of-type(1) {
+            margin-left: 0;
+          }
+          &:hover {
+            .submenu {
+              visibility: visible;
+              top: 100%;
+              opacity: 1;
+            }
+          }
+          a {
+            height: 80px;
+            line-height: 80px;
+          }
+          // submenu 구현
+          .submenu {
+            position: absolute;
+            border: 1px solid $borderColorPrimary;
+            visibility: hidden;
+            top: calc(100% -3px);
+            opacity: 0;
+            z-index: 200;
+            transition: 0.5s;
+            li {
+              width: 100%;
+              margin: 0;
+              background: white;
+              box-sizing: border-box;
+              padding: 0 10px;
+              min-width: 150px;
+              transition: 0.5s;
+              a {
+                display: inline-block;
+                line-height: 40px;
+                height: 40px;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+              }
+              &:hover {
+                background: $gBtnColor;
+                a {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #sub_nav{
+      position: relative;
+      float: right;
+      height: 80px;
+      line-height: 80px;
+      div{
+        float: left;
+      }
+    }
+  }
+  // 하단영역
+  #footer {
+    color: $fontColorPrimary;
+    font-size: 14px;
+    .container {
+      .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .column {
+          flex: 25%;
+          box-sizing: border-box;
+          padding: 0 10px;
+          margin-bottom: 30px;
+          text-align: left;
+          h4 {
+            position: relative;
+            font-size: 14px;
+            font-weight: bold;
+            color: $fontColorPrimary;
+            text-transform: uppercase;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            &:after,
+            &:before {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              height: 3px;
+            }
+            &:before {
+              right: 0;
+              background: #997939;
+            }
+            &:after {
+              width: 60px;
+              background: $fontColorPrimary;
+            }
+          }
+          &.footer_logo {
+            flex: 160px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            h3 {
+              font-size: 34px;
+              font-weight: bold;
+              letter-spacing: 3px;
+              margin: 0 0 20px;
+              padding: 2px 0;
+              line-height: 1;
+            }
+          }
+          ul {
+            li {
+              border-bottom: 1px solid $borderColorPrimary;
+              padding: 10px 0;
+              &:first-child {
+                padding-top: 0;
+              }
+            }
+          }
+          p {
+            line-height: 26px;
+          }
+          input {
+            float: left;
+            &[type='search'] {
+              border: 0;
+              outline: none;
+              padding: 6px 8px;
+              width: 65%;
+            }
+            &[type='submit'] {
+              background: $gBtnColor;
+              border: 0;
+              width: 35%;
+              padding: 6px 0;
+              text-align: center;
+              color: #fff;
+            }
+          }
+        }
+      }
+      &:nth-of-type(2) {
+        text-align: center;
+        padding: 20px 0;
+        border-top: 1px solid $borderColorPrimary;
+        .copyright {
+          margin-bottom: 8px;
+        }
+      }
+    }
+    .footer_top {
+      padding: 60px 0 30px;
+      .container {
+        padding: 30px 0;
+      }
+    }
+  }
+}
