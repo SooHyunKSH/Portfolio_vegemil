@@ -1,27 +1,37 @@
 /* initial.scss */
-body,html{
+body,
+html {
   height: 100%;
 }
 
-body{
-  background: $layoutBg;
+body {
+  background: $layoutBgType2;
   color: $fontColorBasic;
 }
 
-body,h1,h2,h3,h4,h5,h6,html,li,ul{
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+li,
+ul {
   margin: 0;
   padding: 0;
 }
 
-li{
+li {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
   color: $fontColorPrimary;
-  transition: .5s;
-  &:hover{
+  transition: 0.5s;
+  &:hover {
     color: $fontColorHover;
   }
 }

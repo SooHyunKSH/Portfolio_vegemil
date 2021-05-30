@@ -1,0 +1,37 @@
+.common_btn {
+  font-size: $fontSizeNormal;
+  margin-top: 50px;
+  a {
+    padding: 15px 30px;
+    background: $gBtnColor;
+    color: $fontColorBasic;
+  }
+}
+
+.title {
+  font-size: $titleFontSizeBig;
+  text-indent: 10px;
+  padding: 10px 0;
+  background: url("../img/ico_yellow.png") no-repeat;
+  background-position: left top;
+}
+.title_center {
+  position: relative;
+  display: inline-block;
+  font-size: $titleFontSizeBig;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 0;
+  background: url("../img/ico_yellow.png") no-repeat;
+  background-position: left top;
+}
+p {
+  line-height: 28px;
+  &.p_center {
+    text-align: center;
+  }
+  &.sub_text {
+    font-size: $fontSizeMiddle;
+  }
+}

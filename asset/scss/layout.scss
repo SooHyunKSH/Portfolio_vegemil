@@ -8,11 +8,16 @@
     background: #fff;
     top: 20px;
     padding: 0 20px;
+    z-index: 1000;
     #top_logo {
       float: left;
       a {
         height: 80px;
         line-height: 80px;
+        img {
+          width: 25%;
+          opacity: 0.8;
+        }
       }
     }
     // top_menu 구현
@@ -26,11 +31,14 @@
         li {
           position: relative;
           float: left;
-          margin-left: 30px;
+          margin-left: 15px;
+          padding-left: 15px;
           &:nth-of-type(1) {
             margin-left: 0;
           }
           &:hover {
+            background: url("../img/ico_yellow.png") no-repeat;
+            background-position: left;
             .submenu {
               visibility: visible;
               top: 100%;
@@ -38,17 +46,19 @@
             }
           }
           a {
+            font-size: 18px;
             height: 80px;
             line-height: 80px;
+            color: $fontColorBasic;
           }
           // submenu 구현
           .submenu {
             position: absolute;
-            border: 1px solid $borderColorPrimary;
             visibility: hidden;
             top: calc(100% -3px);
             opacity: 0;
             z-index: 200;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 18%);
             transition: 0.5s;
             li {
               width: 100%;
@@ -60,6 +70,8 @@
               transition: 0.5s;
               a {
                 display: inline-block;
+                font-size: 17px;
+                color: $fontColorBasic;
                 line-height: 40px;
                 height: 40px;
                 top: 0;
@@ -70,7 +82,7 @@
               &:hover {
                 background: $gBtnColor;
                 a {
-                  color: #fff;
+                  color: $fontColorBasic;
                 }
               }
             }
@@ -78,13 +90,14 @@
         }
       }
     }
-    #sub_nav{
+    #sub_nav {
       position: relative;
       float: right;
       height: 80px;
       line-height: 80px;
-      div{
+      & > div {
         float: left;
+        line-height: 40px;
       }
     }
   }
@@ -113,7 +126,7 @@
             margin-bottom: 20px;
             &:after,
             &:before {
-              content: '';
+              content: "";
               position: absolute;
               bottom: 0;
               left: 0;
@@ -155,13 +168,13 @@
           }
           input {
             float: left;
-            &[type='search'] {
+            &[type="search"] {
               border: 0;
               outline: none;
               padding: 6px 8px;
               width: 65%;
             }
-            &[type='submit'] {
+            &[type="submit"] {
               background: $gBtnColor;
               border: 0;
               width: 35%;
