@@ -2,7 +2,7 @@
   background-color: $layoutBg;
   #wrap {
     #header {
-      background: $layoutBgType2;
+      background: linear-gradient(to right, $layoutBgType2 87%, $gBtnColor 13%);
     }
   }
   main {
@@ -98,47 +98,52 @@
               font-size: $fontSizeBig;
               font-weight: 700;
             }
-            .border{
+            .sub_box {
+              margin-top: 20px;
+            }
+            .border {
               width: 70%;
               display: inline-block;
               border: 1px solid $borderColorPrimary;
               border-radius: 100%;
             }
           }
-          &.community_list{
+          &.community_list {
             padding: 10px 0;
-            li{
+            li {
               padding: 30px 10px 130px;
               box-sizing: border-box;
               border: 1px solid $borderColorPrimary;
               border-collapse: collapse;
-              margin: 10px;
-              img{
+              margin: 5px;
+              img {
                 width: 100%;
-                height: 100%;
+                height: 80%;
               }
-              p{
+              p {
                 text-align: center;
                 font-size: $fontSizeMiddle;
                 font-weight: 400;
-                margin-top: 20px;
+                margin-top: 50px;
               }
-              .sub_box{
+              .sub_box {
                 font-size: $fontSizeSmall;
               }
             }
           }
-          &.list_2{
-            justify-content: flex-start;
+          &.list_2 {
+            li {
+              width: 50%;
+            }
           }
         }
-        .click_list{
+        .click_list {
           display: inline-block;
           width: 100%;
           border-top: 1px solid $borderColorPrimary;
           border-right: 1px solid $borderColorPrimary;
           margin: 20px 0 0;
-          li{
+          li {
             width: 50%;
             float: left;
             border-left: 1px solid $borderColorPrimary;
@@ -147,14 +152,20 @@
             padding: 18px 0;
             font-size: $fontSizeMiddle;
             text-align: center;
-            &.on{
+            &.on {
               background: $fontColorBasic;
               color: #fff;
             }
           }
         }
-        .display_wrap{
+        .display_wrap {
           padding: 80px 0 20px;
+          .display_box {
+            display: none;
+            &:nth-of-type(1) {
+              display: block;
+            }
+          }
         }
       }
     }

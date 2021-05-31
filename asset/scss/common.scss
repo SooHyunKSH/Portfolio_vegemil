@@ -1,10 +1,22 @@
 .common_btn {
+  position: relative;
   font-size: $fontSizeNormal;
   margin-top: 50px;
   a {
     padding: 15px 30px;
     background: $gBtnColor;
     color: $fontColorBasic;
+    font-weight: 500;
+  }
+  &.common_btn_center {
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:hover {
+    a {
+      background: $gBtnHoverColor;
+    }
   }
 }
 
@@ -13,7 +25,7 @@
   text-indent: 10px;
   padding: 10px 0;
   background: url("../img/ico_yellow.png") no-repeat;
-  background-position: left top;
+  background-position: left 15%;
 }
 .title_center {
   position: relative;
@@ -26,7 +38,7 @@
   padding: 10px 0;
   margin-top: 20px;
   background: url("../img/ico_yellow.png") no-repeat;
-  background-position: left top;
+  background-position: left 15%;
 }
 p {
   line-height: 28px;
@@ -38,11 +50,11 @@ p {
   }
 }
 
-.sub_box{
+.sub_box {
   padding: 10px 20px;
   background-color: $gBtnColor;
 }
-.sub_box_center{
+.sub_box_center {
   position: relative;
   display: table;
   left: 50%;

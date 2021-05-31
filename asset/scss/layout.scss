@@ -5,7 +5,7 @@
   #header {
     position: relative;
     height: 80px;
-    background: #fff;
+    background: linear-gradient(to right, #fff 87%, $gBtnColor 13%);
     top: 20px;
     padding: 0 20px;
     z-index: 1000;
@@ -102,7 +102,7 @@
         text-align: center;
         margin-left: 10px;
       }
-      p{
+      p {
         margin: 0;
         font-size: $fontSizeSmall;
       }
@@ -112,6 +112,7 @@
   #footer {
     color: $fontColorBasic;
     font-size: 14px;
+    margin-top: 60px;
     .container {
       .row {
         display: flex;
