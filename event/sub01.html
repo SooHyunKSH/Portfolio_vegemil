@@ -1,174 +1,237 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>gallery</title>
-  <meta name="description" content="gallery content">
-  <link rel="stylesheet" href="../asset/css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="../asset/css/style.css">
-  <script type="text/javascript" src="../js/jquery.min.js"></script>
-  <script type="text/javascript" src="../js/common.js"></script>
-  <!--[if lt IE 9]>
-  <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-</head>
-<body class="subpage">
- <div id="wrap">
-   <header id="header">
-      <!-- 헤더 영역  -->
-      <h1 id="top_logo"><a href="../index.html">Xwood</a></h1>
-      <nav id="top_nav">
-        <ul>
-          <li>
-            <a href="../company/introduce.html">Company</a>
-            <ul class="submenu">
-              <li><a href=".company/introduce.html">introduce</a></li>
-              <li><a href=".company/ci.html">ci</a></li>
-              <li><a href=".company/history.html">history</a></li>
-            </ul>
-          </li>
-          <li><a href="../product/product.html">Product</a></li>
-          <li><a href="../gallery/gallery.html">Gallery</a></li>
-          <li><a href="../community/notice.html">Community</a></li>
-          <li><a href="../location/location.html">Location</a></li>
-        </ul>
-      </nav>
-   </header>
-   <main>
-     <!-- 컨텐츠 영역 -->
-     <div class="container">
-       <!-- 왼쪽메뉴 -->
-       <aside id="lnb">
-         <ul>
-           <li><a href="./gallery.html" class="on">Gallery</a></li>
-         </ul>
-       </aside>
-       <!-- 컨텐츠 본문 -->
-       <div class="content">
-         <h2 class="sub_title"><span>Gallery</span></h2>
-         <div class="inner">
-           <div
-     style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-     class="swiper-container mySwiper2"
-   >
-     <div class="swiper-wrapper">
-       <div class="swiper-slide">
-         <img src="../asset/img/img01.jpg" />
-       </div>
-       <div class="swiper-slide">
-         <img src="../asset/img/img02.jpg" />
-       </div>
-       <div class="swiper-slide">
-         <img src="../asset/img/img03.jpg" />
-       </div>
-       <div class="swiper-slide">
-         <img src="../asset/img/img04.jpg" />
-       </div>
-     </div>
-     <div class="swiper-button-next"></div>
-     <div class="swiper-button-prev"></div>
-   </div>
-   <div thumbsSlider="" class="swiper-container mySwiper">
-     <div class="swiper-wrapper">
-       <div class="swiper-slide">
-         <img src="../asset/img/img01.jpg" />
-       </div>
-       <div class="swiper-slide">
-         <img src="../asset/img/img02.jpg" />
-       </div>
-       <div class="swiper-slide">
-         <img src="../asset/img/img03.jpg" />
-       </div>
-       <div class="swiper-slide">
-         <img src="../asset/img/img04.jpg" />
-       </div>
-     </div>
-   </div>
-
-         </div>
-       </div>
-     </div>
-   </main>
-   <!-- 하단 영역 -->
-   <footer id="footer">
-     <div class="footer_top">
-       <!-- footer 상단 영역 -->
-       <div class="container">
-         <div class="row">
-           <div class="column footer_logo">
-             <!-- footer logo -->
-             <h3>logo</h3>
-           </div>
-           <div class="column">
-             <!-- site map -->
-             <h4>site map</h4>
-             <ul>
-               <li><a href="../company/introduce.html">Company</a></li>
-               <li><a href="../product/product.html">Product</a></li>
-               <li><a href="../gallery/gallery.html">Gallery</a></li>
-               <li><a href="../community/community.html">Community</a></li>
-               <li><a href="../location/location.html">Location</a></li>
-             </ul>
-           </div>
-           <div class="column">
-             <!-- contact us -->
-             <h4>contact us</h4>
-             <p>
-               A108 Adam street<br>
-               New York, NY 535022<br>
-               United states<br>
-               <strong>phone&nbsp;:&nbsp;</strong><a href="tel=+82-010-0000-0000">+82-010-0000-0000</a><br>
-               <strong>Email&nbsp;:&nbsp;</strong><a href="mailto=mymail@naver.com">mymail@naver.com</a><br>
-             </p>
-           </div>
-           <div class="column news">
-             <!-- news -->
-             <h4>news</h4>
-             <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet,
-               consectetur adipisicing elit
-             </p>
-             <form action="">
-               <input type="search" name="search">
-               <input type="submit" value="search">
-             </form>
-           </div>
-         </div>
-       </div>
-     </div>
-     <div class="container">
-       <!-- footer 하단 영역 -->
-       <div class="coypyright">
-         ⓒcopryright <strong>mypage</strong> .All Rights Reserved.
-       </div>
-       <div class="credits">
-         Designed By <a href="mailto:mymail@naver.com">My Name</a>
-       </div>
-     </div>
-   </footer>
- </div>
-   <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
-   <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        spaceBetween: 10,
-        slidesPerView: 4,
-        freeMode: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-      });
-      var swiper2 = new Swiper(".mySwiper2", {
-        loop: true,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-          swiper: swiper,
-        },
-      });
-    </script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>베지밀 | 프리미엄</title>
+        <meta name="description" content="introduce content">
+        <link rel="stylesheet" href="../asset/css/style.css">
+        <script type="text/javascript" src="../asset/js/jquery.min.js"></script>
+        <script type="text/javascript" src="../asset/js/common.js"></script>
+        <!--[if lt IE 9]> <script src =
+        "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    </head>
+    <body class="subpage">
+        <div id="wrap">
+            <header id="header">
+                <!-- header area -->
+                <h1 id="top_logo">
+                    <a href="../index.html"><img src="../asset/img/logo_black.png" alt="toplogo"></a>
+                </h1>
+                <nav id="top_nav">
+                    <ul>
+                        <li>
+                            <a href="../brand/sub01.html">Brand</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="../brand/sub01.html">브랜드소개</a>
+                                </li>
+                                <li>
+                                    <a href="../brand/sub02.html">영양</a>
+                                </li>
+                                <li>
+                                    <a href="../brand/sub03.html">안심플러스</a>
+                                </li>
+                                <li>
+                                    <a href="../brand/sub04.html">TV광고</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../product/sub01.html">Product</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="../product/sub01.html">프리미엄</a>
+                                </li>
+                                <li>
+                                    <a href="../product/sub01.html">우리콩</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../community/sub01.html">Community</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="../community/sub01.html">육아정보</a>
+                                </li>
+                                <li>
+                                    <a href="../community/sub02.html">육아상담 Q&A</a>
+                                </li>
+                                <li>
+                                    <a href="../community/sub03.html">영유아식 레시피</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="sub01.html">Event</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="sub01.html">진행 중 이벤트</a>
+                                </li>
+                                <li>
+                                    <a href="sub02.html">후기 이벤트</a>
+                                </li>
+                                <li>
+                                    <a href="sub03.html">아기모델 선발대회</a>
+                                </li>
+                                <li>
+                                    <a href="sub04.html">샘플신청</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../support/sub01.html">Support</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="../support/sub01.html">제품 FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="../support/sub02.html">수유법</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="sub_nav">
+                    <div>
+                        <div class="subnav_img">
+                            <img src="../asset/img/ico_shop2.png" alt="subnavimg">
+                        </div>
+                        <p>SHOP</p>
+                    </div>
+                    <div>
+                        <div class="subnav_img">
+                            <img src="../asset/img/ico_log2.png" alt="subnavimg">
+                        </div>
+                        <p>LOGIN</p>
+                    </div>
+                    <div>
+                        <div class="subnav_img">
+                            <img src="../asset/img/ico_love2.png" alt="subnavimg">
+                        </div>
+                        <p>JOIN</p>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <!-- 컨텐츠 영역 -->
+                <div class="container">
+                  <!-- 왼쪽메뉴 -->
+                  <aside id="lnb">
+                      <ul>
+                        <li>
+                          <a href="sub01.html" class="on">육아정보</a>
+                      </li>
+                      <li>
+                          <a href="sub02.html">육아상담 Q&A</a>
+                      </li>
+                      <li>
+                          <a href="sub03.html">영유아식 레시피</a>
+                      </li>
+                      </ul>
+                  </aside>
+                  <!-- 컨텐츠 본문 -->
+                  <div class="content">
+                      <div class="inner">
+                        <div class="box">
+                          <div class="items">
+                            <div class="sub_box sub_box_center">Event</div>
+                            <h3 class="title title_center">진행 중 이벤트</h3>
+                            <p class="p_center">현재 진행 중인 이벤트를 확인하세요.</p>
+                        </div>
+                            <div class="items">
+                              <ul class="list_4 list_2 community_list">
+                                <li>
+                                    <img src="../asset/img/event/EVENT_20210210.jpg" alt="event">
+                                    <div class="sub_box sub_box_center">2021-01-01 ~ 2021-12-31</div>
+                                    <p>달력 아기모델 콘테스트</p>
+                                </li>
+                                <li>
+                                    <img src="../asset/img/event/EVENT_20210211.jpg" alt="event">
+                                    <div class="sub_box sub_box_center">2017-07-01 ~ 2021-12-31</div>
+                                    <p>후기 이벤트</p>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+            </main>
+            <!-- 하단 영역 -->
+            <footer id="footer">
+                <div class="footer_top">
+                    <!-- footer 상단 영역 -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="column footer_logo">
+                                <!-- footer logo -->
+                                <h3><a href="#"><img src="../asset/img/footer_logo.png" alt="footer_logo"></a></h3>
+                            </div>
+                            <div class="column">
+                                <!-- site map -->
+                                <h4>site map</h4>
+                                <ul>
+                                    <li>
+                                        <a href="sub01.html">Brand</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product/sub01.html">Product</a>
+                                    </li>
+                                    <li>
+                                        <a href="../community/sub01.html">Community</a>
+                                    </li>
+                                    <li>
+                                        <a href="../event/sub01.html">Event</a>
+                                    </li>
+                                    <li>
+                                        <a href="../support/sub01.html">Support</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <!-- contact us -->
+                                <h4>contact us</h4>
+                                <p>
+                                    A108 Adam street<br>
+                                    New York, NY 535022<br>
+                                    United states<br>
+                                    <strong>phone&nbsp;:&nbsp;</strong>
+                                    <a href="tel=+82-010-0000-0000">+82-010-0000-0000</a><br>
+                                    <strong>Email&nbsp;:&nbsp;</strong>
+                                    <a href="mailto=mymail@naver.com">mymail@naver.com</a><br>
+                                </p>
+                            </div>
+                            <div class="column news">
+                                <!-- news -->
+                                <h4>news</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreLorem
+                                    ipsum dolor sit amet, consectetur adipisicing elit
+                                </p>
+                                <form action="">
+                                    <input type="search" name="search">
+                                    <input type="submit" value="search">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <!-- footer 하단 영역 -->
+                    <div class="coypyright">
+                        ⓒcopryright
+                        <strong>mypage</strong>
+                        .All Rights Reserved.
+                    </div>
+                    <div class="credits">
+                        Designed By
+                        <a href="mailto:mymail@naver.com">My Name</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
 </html>

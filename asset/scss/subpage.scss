@@ -62,6 +62,7 @@
       .inner {
         & + .inner {
           margin-top: 50px;
+          margin-bottom: 100px;
           padding-top: 50px;
           border-top: 1px solid $borderColorPrimary;
         }
@@ -81,10 +82,9 @@
         .box {
           flex-wrap: wrap;
         }
-
-        ul {
+        .list_4 {
           display: flex;
-          // justify-content: space-between;
+          justify-content: space-around;
           flex-shrink: 0;
           flex-grow: 0;
           padding: 50px 0;
@@ -98,7 +98,63 @@
               font-size: $fontSizeBig;
               font-weight: 700;
             }
+            .border{
+              width: 70%;
+              display: inline-block;
+              border: 1px solid $borderColorPrimary;
+              border-radius: 100%;
+            }
           }
+          &.community_list{
+            padding: 10px 0;
+            li{
+              padding: 30px 10px 130px;
+              box-sizing: border-box;
+              border: 1px solid $borderColorPrimary;
+              border-collapse: collapse;
+              margin: 10px;
+              img{
+                width: 100%;
+                height: 100%;
+              }
+              p{
+                text-align: center;
+                font-size: $fontSizeMiddle;
+                font-weight: 400;
+                margin-top: 20px;
+              }
+              .sub_box{
+                font-size: $fontSizeSmall;
+              }
+            }
+          }
+          &.list_2{
+            justify-content: flex-start;
+          }
+        }
+        .click_list{
+          display: inline-block;
+          width: 100%;
+          border-top: 1px solid $borderColorPrimary;
+          border-right: 1px solid $borderColorPrimary;
+          margin: 20px 0 0;
+          li{
+            width: 50%;
+            float: left;
+            border-left: 1px solid $borderColorPrimary;
+            border-bottom: 1px solid $borderColorPrimary;
+            box-sizing: border-box;
+            padding: 18px 0;
+            font-size: $fontSizeMiddle;
+            text-align: center;
+            &.on{
+              background: $fontColorBasic;
+              color: #fff;
+            }
+          }
+        }
+        .display_wrap{
+          padding: 80px 0 20px;
         }
       }
     }

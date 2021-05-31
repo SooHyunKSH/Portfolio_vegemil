@@ -94,16 +94,23 @@
       position: relative;
       float: right;
       height: 80px;
-      line-height: 80px;
       & > div {
+        position: relative;
         float: left;
-        line-height: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        margin-left: 10px;
+      }
+      p{
+        margin: 0;
+        font-size: $fontSizeSmall;
       }
     }
   }
   // 하단영역
   #footer {
-    color: $fontColorPrimary;
+    color: $fontColorBasic;
     font-size: 14px;
     .container {
       .row {
@@ -120,7 +127,7 @@
             position: relative;
             font-size: 14px;
             font-weight: bold;
-            color: $fontColorPrimary;
+            color: $fontColorBasic;
             text-transform: uppercase;
             padding-bottom: 12px;
             margin-bottom: 20px;
@@ -173,6 +180,7 @@
               outline: none;
               padding: 6px 8px;
               width: 65%;
+              border: 1px solid $borderColorPrimary;
             }
             &[type="submit"] {
               background: $gBtnColor;
@@ -180,7 +188,7 @@
               width: 35%;
               padding: 6px 0;
               text-align: center;
-              color: #fff;
+              color: $fontColorBasic;
             }
           }
         }
