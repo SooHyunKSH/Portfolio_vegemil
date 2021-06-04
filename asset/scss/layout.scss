@@ -95,7 +95,7 @@
       float: right;
       height: 80px;
       & > div {
-        @include horizontalCenter; // 가로 가운데 정렬
+        @include verticalCenter; // 가로 가운데 정렬
         float: left;
         text-align: center;
         margin-left: 10px;
@@ -188,6 +188,7 @@
               padding: 6px 0;
               text-align: center;
               color: $fontColorBasic;
+              border: 1px solid $borderColorPrimary;
             }
           }
         }

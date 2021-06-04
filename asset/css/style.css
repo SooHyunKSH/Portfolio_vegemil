@@ -544,8 +544,8 @@ table tr td {
 
 #wrap #header #sub_nav > div {
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translateY(-50%);
   float: left;
   text-align: center;
   margin-left: 10px;
@@ -651,6 +651,7 @@ table tr td {
   padding: 6px 0;
   text-align: center;
   color: #3c3c3c;
+  border: 1px solid #ccc;
 }
 
 #wrap #footer .container:nth-of-type(2) {
