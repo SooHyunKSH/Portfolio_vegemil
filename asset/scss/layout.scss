@@ -95,10 +95,8 @@
       float: right;
       height: 80px;
       & > div {
-        position: relative;
+        @include horizontalCenter; // 가로 가운데 정렬
         float: left;
-        top: 50%;
-        transform: translateY(-50%);
         text-align: center;
         margin-left: 10px;
       }

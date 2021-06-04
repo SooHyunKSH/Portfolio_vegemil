@@ -186,10 +186,8 @@
       }
     }
     .img_resize {
-      position: relative;
+      @include horizontalCenter; // 가로 가운데 정렬
       width: 25%;
-      left: 50%;
-      transform: translateX(-50%);
     }
     &.brand_bg {
       background: $layoutBgType2;
