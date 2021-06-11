@@ -4,16 +4,15 @@
   margin: 0 auto;
   #header {
     position: relative;
-    height: 80px;
-    background: linear-gradient(to right, #fff 87%, $gBtnColor 13%);
+    height: 65px;
+    line-height: 65px;
+    background: #fff;
     top: 20px;
-    padding: 0 20px;
+    padding-left: 20px;
     z-index: 1000;
     #top_logo {
       float: left;
       a {
-        height: 80px;
-        line-height: 80px;
         img {
           width: 25%;
           opacity: 0.8;
@@ -23,8 +22,8 @@
     // top_menu 구현
     #top_nav {
       position: absolute;
-      height: 80px;
       left: 50%;
+      height: 65px;
       transform: translateX(-50%);
       ul {
         float: left;
@@ -47,8 +46,6 @@
           }
           a {
             font-size: 18px;
-            height: 80px;
-            line-height: 80px;
             color: $fontColorBasic;
           }
           // submenu 구현
@@ -93,16 +90,18 @@
     #sub_nav {
       position: relative;
       float: right;
-      height: 80px;
+      padding-right: 20px;
+      background-color: $secondBg;
       & > div {
-        @include verticalCenter; // 가로 가운데 정렬
         float: left;
         text-align: center;
-        margin-left: 10px;
+        padding: 0 20px;
+        &:last-of-type {
+          padding: 0 0 0 20px;
+        }
       }
       p {
-        margin: 0;
-        font-size: $fontSizeSmall;
+        display: none;
       }
     }
   }
@@ -140,11 +139,11 @@
             }
             &:before {
               right: 0;
-              background: #997939;
+              background: $gBtnColor;
             }
             &:after {
               width: 60px;
-              background: $fontColorPrimary;
+              background: $borderColorType2;
             }
           }
           &.footer_logo {
@@ -179,7 +178,7 @@
               outline: none;
               padding: 6px 8px;
               width: 65%;
-              border: 1px solid $borderColorPrimary;
+              border: 1px solid $gBtnColor;
             }
             &[type="submit"] {
               background: $gBtnColor;
@@ -188,7 +187,7 @@
               padding: 6px 0;
               text-align: center;
               color: $fontColorBasic;
-              border: 1px solid $borderColorPrimary;
+              border: 1px solid $gBtnColor;
             }
           }
         }

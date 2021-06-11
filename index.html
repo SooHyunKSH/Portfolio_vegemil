@@ -4,10 +4,9 @@
         <meta charset="UTF-8">
         <title>베지밀 | 영유아식</title>
         <meta name="description" content="베지밀 베지밀영유아식 vegemilBaby">
-        <link rel="stylesheet" href="./asset/css/style.css">
         <link rel="stylesheet" href="./asset/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="./asset/css/style.css">
         <script type="text/javascript" src="./asset/js/jquery.min.js"></script>
-        <script type="text/javascript" src="./asset/js/swiper-bundle.min.js"></script>
         <script type="text/javascript" src="./asset/js/common.js"></script>
         <!--[if lt IE 9]> <script src =
         "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
@@ -116,24 +115,18 @@
             </header>
             <main>
                 <!-- main banner area -->
-                <div class="main_banner">
-                    <div class="milk_top">
-                        <img src="./asset/img/waterLine.png" alt="milk">
-                    </div>
-                    <div class="main_text">
-                        <img src="./asset/img/2.png" alt="main_img">
-                        <div class="title">
-                            Right now!<br>
-                            우리 아이가 잘먹을까 고민되시나요?<br>
-                            지금 바로 샘플 신청하세요!
-                            <div class="common_btn">
-                                <a href="#">무료 샘플 신청</a>
-                            </div>
+                <div class="swiper-container mySwiper main_banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./asset/img/mainTop_banner01.jpg" alt="메인 이미지">
+                            <div class="slide_text"><span>베지밀 영유아식</span>으로<br>시작부터 균형있게!</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./asset/img/mainTop_banner02.jpg" alt="메인 이미지">
+                            <div class="slide_text">우리 콩으로 갈아 만든<br><span class="b_bg">베지밀 영유아식</span></div>
                         </div>
                     </div>
-                    <div class="milk_bottom">
-                        <img src="./asset/img/drop05.png" alt="milk">
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
                 <!-- contents area -->
                 <div class="container">
@@ -152,7 +145,7 @@
                                         베타글루칸이 함유되어 있습니다.
                                     </p>
                                     <div class="common_btn">
-                                        <a href="./company/company01.html">더 알아보기</a>
+                                        <a href="#">더 알아보기</a>
                                     </div>
                                 </div>
                                 <div class="items">
@@ -176,7 +169,7 @@
                                         돕는 비타민, 무기질과 베타카로틴이 골고루 함유되어 있습니다.
                                     </p>
                                     <div class="common_btn">
-                                        <a href="./company/company01.html">더 알아보기</a>
+                                        <a href="#">더 알아보기</a>
                                     </div>
                                 </div>
                             </div>
@@ -192,7 +185,9 @@
                         <div class="row">
                             <div class="column footer_logo">
                                 <!-- footer logo -->
-                                <h3><a href="#"><img src="./asset/img/footer_logo.png" alt="footer_logo"></a></h3>
+                                <h3>
+                                    <a href="#"><img src="./asset/img/footer_logo.png" alt="footer_logo"></a>
+                                </h3>
                             </div>
                             <div class="column">
                                 <!-- sitemap -->
@@ -255,5 +250,24 @@
                 </div>
             </footer>
         </div>
+        <script type="text/javascript" src="./asset/js/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev"
+                }
+            });
+        </script>
     </body>
 </html>

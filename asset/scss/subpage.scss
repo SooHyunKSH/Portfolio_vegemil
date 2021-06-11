@@ -1,169 +1,185 @@
+/* sub page */
 .subpage {
   background-color: $layoutBg;
   #wrap {
     #header {
-      background: linear-gradient(to right, $layoutBgType2 87%, $gBtnColor 13%);
+      background: $layoutBgType2;
     }
-  }
-  main {
-    position: relative;
-    top: 80px;
-    .container {
-      display: flex;
-      #lnb {
-        flex: 230px;
-        flex-shrink: 0;
-        flex-grow: 0;
-        box-sizing: border-box;
-        padding-right: 50px;
-        ul {
-          li {
-            border-bottom: 1px solid $borderColorPrimary;
-            a {
-              display: inline-block;
-              width: 100%;
-              height: 100%;
-              line-height: 50px;
-              font-size: 18px;
-              box-sizing: border-box;
-              transition: 0.5s;
-              &:hover {
-                padding-left: 20px;
-              }
-              &.on {
-                color: $fontColorBasic;
-                background: $gBtnColor;
-                padding-left: 20px;
-              }
-            }
-          }
-        }
-      } //lnb
-      .content {
-        min-height: 500px;
-      }
-      .sub_title {
-        span {
-          position: relative;
-          display: inline-block;
-          padding-bottom: 8px;
-          line-height: 43px;
-          &:after {
-            content: "";
-            position: absolute;
-            height: 3px;
-            background: $borderColorPrimary;
-            bottom: 0;
-            left: 0;
-            right: 0;
-          }
-        }
-      }
-      .inner {
-        & + .inner {
-          margin-top: 50px;
-          margin-bottom: 100px;
-          padding-top: 50px;
-          border-top: 1px solid $borderColorPrimary;
-        }
-
-        &.kakao_map {
-          margin-top: 20px;
-        }
-
-        table {
-          margin-top: 50px;
-          & + .gbtn {
-            margin-top: 20px;
-            float: right;
-          }
-        }
-
-        .box {
-          flex-wrap: wrap;
-        }
-        .list_4 {
-          display: flex;
-          justify-content: space-around;
+    main {
+      position: relative;
+      top: 80px;
+      .container {
+        display: flex;
+        #lnb {
+          flex: 230px;
           flex-shrink: 0;
           flex-grow: 0;
-          padding: 50px 0;
-          li {
-            text-align: center;
-            width: 25%;
-            font-size: $fontSizeMiddle;
-            line-height: 2;
-            font-weight: 400;
-            p {
-              font-size: $fontSizeBig;
-              font-weight: 700;
+          box-sizing: border-box;
+          padding-right: 50px;
+          ul {
+            li {
+              border-bottom: 1px solid $borderColorPrimary;
+              a {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                line-height: 50px;
+                font-size: 18px;
+                box-sizing: border-box;
+                transition: 0.5s;
+                &:hover {
+                  padding-left: 20px;
+                }
+                &.on {
+                  color: $fontColorBasic;
+                  background: $gBtnColor;
+                  padding-left: 20px;
+                }
+              }
             }
-            .sub_box {
+          }
+        }
+        //lnb
+        .content {
+          min-height: 500px;
+          .sub_title {
+            span {
+              position: relative;
+              display: inline-block;
+              padding-bottom: 8px;
+              line-height: 43px;
+              &:after {
+                content: "";
+                position: absolute;
+                height: 3px;
+                background: $borderColorPrimary;
+                bottom: 0;
+                left: 0;
+                right: 0;
+              }
+            }
+          }
+          .inner {
+            & + .inner {
+              margin-top: 50px;
+              margin-bottom: 100px;
+              padding-top: 50px;
+              border-top: 1px solid $borderColorPrimary;
+              &.no_padding {
+                padding-top: 0;
+                border-top: none;
+              }
+            }
+
+            &.kakao_map {
               margin-top: 20px;
             }
-            .border {
-              width: 70%;
-              display: inline-block;
-              border: 1px solid $borderColorPrimary;
-              border-radius: 100%;
-            }
-          }
-          &.community_list {
-            padding: 10px 0;
-            li {
-              padding: 30px 10px 130px;
-              box-sizing: border-box;
-              border: 1px solid $borderColorPrimary;
-              border-collapse: collapse;
-              margin: 5px;
-              img {
-                width: 100%;
-                height: 80%;
+
+            table {
+              margin-top: 50px;
+              & + .gbtn {
+                margin-top: 20px;
+                float: right;
               }
-              p {
+            }
+
+            .box {
+              flex-wrap: wrap;
+            }
+            .list_4 {
+              display: flex;
+              justify-content: space-around;
+              flex-shrink: 0;
+              flex-grow: 0;
+              padding: 50px 0;
+              li {
                 text-align: center;
+                width: 25%;
                 font-size: $fontSizeMiddle;
+                line-height: 2;
                 font-weight: 400;
-                margin-top: 50px;
+                p {
+                  font-size: $fontSizeBig;
+                  font-weight: 700;
+                }
+                .sub_box {
+                  margin-top: 20px;
+                }
+                .border {
+                  width: 70%;
+                  display: inline-block;
+                  border: 1px solid $borderColorPrimary;
+                  border-radius: 100%;
+                }
               }
-              .sub_box {
-                font-size: $fontSizeSmall;
+              &.community_list {
+                padding: 10px 0;
+                li {
+                  padding: 20px 15px;
+                  box-sizing: border-box;
+                  border: 1px solid $borderColorPrimary;
+                  border-radius: 10px;
+                  border-collapse: collapse;
+                  margin: 5px;
+                  &.null {
+                    border: none;
+                  }
+                  img {
+                    width: 100%;
+                    height: 65%;
+                    object-fit: cover;
+                  }
+                  p {
+                    text-align: center;
+                    font-size: $fontSizeNormal;
+                    font-weight: 400;
+                    margin-top: 15px;
+                  }
+                  .sub_box {
+                    font-size: $fontSizeSmall;
+                  }
+                }
+              }
+              &.list_2 {
+                li {
+                  width: 50%;
+                }
+              }
+              &.list_3 {
+                li {
+                  width: 30%;
+                }
               }
             }
-          }
-          &.list_2 {
-            li {
-              width: 50%;
+            .click_list {
+              display: inline-block;
+              width: 100%;
+              border-top: 1px solid $borderColorPrimary;
+              border-right: 1px solid $borderColorPrimary;
+              margin: 20px 0 0;
+              li {
+                width: 50%;
+                float: left;
+                border-left: 1px solid $borderColorPrimary;
+                border-bottom: 1px solid $borderColorPrimary;
+                box-sizing: border-box;
+                padding: 18px 0;
+                font-size: $fontSizeMiddle;
+                text-align: center;
+                &.on {
+                  background: $fontColorBasic;
+                  color: #fff;
+                }
+              }
             }
-          }
-        }
-        .click_list {
-          display: inline-block;
-          width: 100%;
-          border-top: 1px solid $borderColorPrimary;
-          border-right: 1px solid $borderColorPrimary;
-          margin: 20px 0 0;
-          li {
-            width: 50%;
-            float: left;
-            border-left: 1px solid $borderColorPrimary;
-            border-bottom: 1px solid $borderColorPrimary;
-            box-sizing: border-box;
-            padding: 18px 0;
-            font-size: $fontSizeMiddle;
-            text-align: center;
-            &.on {
-              background: $fontColorBasic;
-              color: #fff;
-            }
-          }
-        }
-        .display_wrap {
-          padding: 80px 0 20px;
-          .display_box {
-            display: none;
-            &:nth-of-type(1) {
-              display: block;
+            .display_wrap {
+              padding: 80px 0 20px;
+              .display_box {
+                display: none;
+                &:nth-of-type(1) {
+                  display: block;
+                }
+              }
             }
           }
         }
